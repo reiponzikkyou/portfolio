@@ -10,4 +10,20 @@ header {
   background-size: cover;
   /* 画像を繰り返さない */
   background-repeat: no-repeat;
+  transition: transform 0.2s ease-in-out;
 }
+header:hover {
+  /* 15度回転させる */
+  transform: rotate(5deg);
+}
+
+h2{
+  transform-origin: left;
+  transition: transform 0.2s ease-in-out;
+}
+h2:hover{
+transform: rotate(5deg);
+}
+
+
+
