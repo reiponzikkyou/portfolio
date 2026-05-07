@@ -1,8 +1,22 @@
 @charset "utf-8";
 /* コメントコピペ用 */
+body {
+  /* 漆黒（カラーコードの最小値） */
+  background-color: #000000;
+  /* 文字を白にして読みやすくする */
+  color: #ffffff;
+}
 
 header {
   color: rgb(239, 239, 239);
+  width: 100%;
+  aspect-ratio: 5 / 1;
+  display: flex;
+  align-items: center;    /* 上下中央揃え */
+  justify-content: flex-start; /* 左詰め（デフォルトですが明示） */
+  
+  /* 左端にぴったりくっつかないよう余白を作る */
+  padding-left: 5%;
   background-image:url(../images/cat_carrying_a_dragon.jpg) ;
   /* 画像を中央に配置 */
   background-position: center;
@@ -15,6 +29,25 @@ header {
 header:hover {
   /* 15度回転させる */
   transform: rotate(5deg);
+}
+
+#Art_works{
+  color: rgb(239, 239, 239);
+  width: 100%;
+  aspect-ratio: 8 / 1;
+  display: flex;
+  align-items: center;    /* 上下中央揃え */
+  justify-content: flex-start; /* 左詰め（デフォルトですが明示） */
+  /* 左端にぴったりくっつかないよう余白を作る */
+  padding-left: 5%;
+  background-image:url(../images/image01.png) ;
+  /* 画像を中央に配置 */
+  background-position: center;
+  /* 画像を隙間なく、かつ切り取って全体に広げる（一番重要！） */
+  background-size: cover;
+  /* 画像を繰り返さない */
+  background-repeat: no-repeat;
+  transition: transform 0.2s ease-in-out;
 }
 
 h2{
