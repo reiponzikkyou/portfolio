@@ -1,2 +1,2 @@
 https://reiponzikkyou.github.io/portfolio/
-リロードされない時はctrl+F5
+キャッシュが残ってる時はctrl+F5
