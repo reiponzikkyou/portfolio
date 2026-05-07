@@ -1,44 +1,13 @@
-h1 {
-  margin: 60px 0 35px 0;
-  padding: 0 0 0 15px;
-  font-size: 26px;
-  font-weight: bold;
-  border-width: 0 0 0 4px;
-  border-style: solid;
-  border-color: #0f5296;
-}
+@charset "utf-8";
+/* コメントコピペ用 */
 
-dl {
-  width: auto;
-  color: #fff;
-  font-size: 10px;
-}
-dl:first-child {
-  margin-top:10px;
-}
-dt {
-  position:relative;
-  display: block;
-  padding: 20px 0 20px 20px;
-  background-color: #333333;
-}
-dt:after {
-  content: "＞";
-  position: relative;
-  top: 35%;
-  left: 85%;
-  transform: rotate(90deg);
-}
-dt.close:after {
-  content: "＜";
-  position: re;
-  top: 35%;
-  left: 85%;
-  transform: rotate(-270deg);
-}
-dd {
-  display: none;
-  margin: 0; /* ここでインデントを消す */
-  margin-left: 0; /* 明示的に指定 */
-  color: #000;
+header {
+  color: rgb(239, 239, 239);
+  background-image:url(../images/cat_carrying_a_dragon.jpg) ;
+  /* 画像を中央に配置 */
+  background-position: center;
+  /* 画像を隙間なく、かつ切り取って全体に広げる（一番重要！） */
+  background-size: cover;
+  /* 画像を繰り返さない */
+  background-repeat: no-repeat;
 }
