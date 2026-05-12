@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Guard",
+  "version": "1.1",
+  "description": "SNSを開いた時に作業を促し、ボタン押下でタブを閉じます。",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*",
+        "https://www.instagram.com/*",
+        "https://www.facebook.com/*",
+        "https://www.youtube.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+        }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.png", "*.jpg", "*.jpeg", "*.gif"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
